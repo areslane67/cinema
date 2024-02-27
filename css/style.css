@@ -1,0 +1,91 @@
+@import url(./reset.css);
+html {
+    background: linear-gradient(to top, rgba(2, 2, 2, 0.5)50%, rgba(0, 0, 0, 0.5)50%),
+        url(../assets/netflix-cinema-film-2020.jpg)no-repeat fixed center center / cover;
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    margin: 2rem;
+}
+main section{
+    width: 80%;
+    margin: 0 auto;
+}
+main section.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+main section.top img{
+    width: 10rem;
+}
+main section.mid{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+main section.mid h2{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+main section.mid div.form-1{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+main section.mid p{
+    display: table-cell;
+    border: .2rem solid black;
+    padding: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+/* Styles pour le formulaire */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #mail-bar {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    width: 250px;
+  }
+    #email-btn {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+    #email-btn:hover {
+    background-color: #0056b3;
+  }
+  main section.filme-mid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main section.filme-mid div img{
+    width: 40rem;
+    margin-left: 10rem;
+  }
+  main section.filme div ul{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main section.filme div ul li{
+    width: 20rem;
+    margin: 1rem
+  }
