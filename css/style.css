@@ -9,6 +9,9 @@ header ul{
 header ul li{
     margin: 2rem;
 }
+header ul li a.focus{
+  color: red;
+}
 main section{
     width: 80%;
     margin: 0 auto;
@@ -31,7 +34,7 @@ main section.mid{
     justify-content: center;
     flex-direction: column; 
 }
-main section.mid h2{
+main section.mid h2,h2.ze{
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
@@ -46,11 +49,7 @@ main section.mid p{
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
   #mail-bar,form.login input,form.form-1 input{
     padding: 1rem;
     border: 0.3rem solid #ccc;
@@ -77,6 +76,9 @@ form {
     justify-content: center;
     flex-direction: column;
   }
+  form.form-1{
+    align-items: start;
+  }
   button.valider{
     margin-top: 2rem;
     width: 40rem;
@@ -86,8 +88,14 @@ form {
   form.login{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  form.login label,form.form-1 label{
+    margin-top: 1rem;
+  }
+  form.login input,form.form-1 input{
+    margin-bottom: 1rem;
   }
   main section.filme-mid{
     display: flex;
@@ -106,7 +114,10 @@ form {
   }
   main section.filme div ul li{
     width: 20rem;
-    margin: 1rem
+    margin: 1rem;
+    border: 0.3rem solid #ccc;
+    padding: 1rem;
+    border-radius: 1rem;
   }
   main section.choix div ul li{
     width: 25rem;
@@ -115,6 +126,9 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 0.3rem solid #ccc;
+    padding: 1rem;
+    border-radius: 1rem;
   }
   main section.choix div ul li a{
     width: 100%;
@@ -126,6 +140,9 @@ form {
     border-radius: .5rem;
     font-size: 1.5rem;
     cursor: pointer;
+  }
+  main section.choix div ul li p{
+    margin: 1rem 0rem;
   }
   main section.pow{
     display: flex;
