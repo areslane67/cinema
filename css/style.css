@@ -41,36 +41,53 @@ main section.mid div.form-1{
 }
 main section.mid p{
     display: table-cell;
-    border: .2rem solid black;
+    border: .2rem solid #fff;
     padding: 2rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
-/* Styles pour le formulaire */
 form {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  #mail-bar {
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-right: 10px;
-    width: 250px;
+  #mail-bar,form.login input,form.form-1 input{
+    padding: 1rem;
+    border: 0.3rem solid #ccc;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    margin-right: 0.7rem;
+    width: 30rem;
   }
-    #email-btn {
-    padding: 10px 20px;
+    #email-btn,button.valider {
+    padding: 1rem 2rem;
     background-color: black;
     color: white;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: .5rem;
+    font-size: 1.5rem;
     cursor: pointer;
   }
-    #email-btn:hover {
+    #email-btn:hover,button.valider:hover,main section.choix div ul li a:hover{
     background-color: #0056b3;
+  }
+  div.content-2,form.form-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  button.valider{
+    margin-top: 2rem;
+    width: 40rem;
+    margin-right: 0.7rem;
+
+  }
+  form.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   main section.filme-mid{
     display: flex;
@@ -80,12 +97,50 @@ form {
   main section.filme-mid div img{
     width: 40rem;
     margin-left: 10rem;
+    border-radius: 2rem;
   }
-  main section.filme div ul{
+  main section.filme div ul,main section.choix div ul{
     display: flex;
     flex-wrap: wrap;
+    justify-content:space-between;
   }
   main section.filme div ul li{
     width: 20rem;
     margin: 1rem
   }
+  main section.choix div ul li{
+    width: 25rem;
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main section.choix div ul li a{
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  main section.pow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main section.pow img.ins{
+    width: 70%;
+    height: 30rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border-radius: 2rem;
+  }
+footer{
+  margin-top: 10rem;
+  text-align: center;
+}
