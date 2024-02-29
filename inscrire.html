@@ -31,24 +31,29 @@
                     <form method="post" class="login">
                         <label for="nom">Nom:</label>
                         <input type="text" name="nom" id="nom" placeholder="Nom">
+                        
                         <label for="prenom">Prénom:</label>
                         <input type="text" name="prenom" id="prenom" placeholder="Prénom">
+                        
                         <label for="mail">E-mail:</label>
                         <input type="text" name="mail" id="mail" placeholder="E-mail">
-                        <label >Ville:</label>
-                        <input list="ville" placeholder="Ville">
+                        
+                        <label for="ville">Ville:</label>
+                        <input list="ville" id="ville" placeholder="Ville">
                         <datalist id="ville">
                             <option value="Alger">Alger</option>
                             <option value="paris">paris</option>
                         </datalist>
-                        <label >Pays:</label>
-                        <input list="pays" placeholder="Pays">
+                        
+                        <label for="pays">Pays:</label>
+                        <input list="pays" id="pays" placeholder="Pays">
                         <datalist id="pays">
                             <option value="Algerie">Algerie</option>
                             <option value="France">France</option>
                         </datalist>
-                        <!-- <input type="submit" id="valider" value="valider"> -->
+                        
                     </form>
+                    
                     <button class="valider">valider</button>
     
                  </div>

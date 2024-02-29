@@ -3,14 +3,20 @@ html {
     background: linear-gradient(to top, rgba(2, 2, 2, 0.5)50%, rgba(0, 0, 0, 0.5)50%),
         url(../assets/netflix-cinema-film-2020.jpg)no-repeat fixed center center / cover;
 }
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+header ul li a.focus {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  color: #e69090;
+}
+
 header ul{
     display: flex;
 }
 header ul li{
     margin: 2rem;
-}
-header ul li a.focus{
-  color: red;
 }
 main section{
     width: 80%;
@@ -27,7 +33,7 @@ main section.top img{
     width: 10rem;
 }
 main section.mid{
-    width: 50%;
+    width: 70%;
     text-align: center;
     display: flex;
     align-items: center;
@@ -44,8 +50,8 @@ main section.mid div.form-1{
 }
 main section.mid p{
     display: table-cell;
-    border: .2rem solid #fff;
-    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: rgb(255, 255, 255) 0px 0px 20px;    padding: 2rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
@@ -56,7 +62,7 @@ main section.mid p{
     border-radius: 0.4rem;
     font-size: 1rem;
     margin-right: 0.7rem;
-    width: 30rem;
+    width: 60rem;
   }
     #email-btn,button.valider {
     padding: 1rem 2rem;
@@ -158,6 +164,85 @@ main section.mid p{
     border-radius: 2rem;
   }
 footer{
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
   margin-top: 10rem;
   text-align: center;
+}
+@media only screen and (max-width: 1200px) {
+  main section.top img {
+      width: 8rem;
+  }
+
+  #mail-bar,
+  form.login input,
+  form.form-1 input {
+      width: 50rem;
+  }
+
+  button.valider {
+      width: 35rem;
+  }
+
+  main section.filme-mid div img {
+      width: 30rem;
+      margin-left: 5rem;
+  }
+
+  main section.filme div ul li,
+  main section.choix div ul li {
+      width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  header ul li {
+      margin: 1rem;
+  }
+
+  main section.top img {
+      width: 6rem;
+  }
+
+  main section.mid h2,
+  h2.ze {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+  }
+
+  #mail-bar,
+  form.login input,
+  form.form-1 input {
+      width: 90%;
+  }
+
+  button.valider {
+      width: 90%;
+      margin-right: 0;
+  }
+
+  main section.filme-mid div img {
+      width: 25rem;
+      margin: 2rem;
+  }
+  section.choix h2{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+  }
+  main section.filme-mid{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main section.filme div ul li,
+  main section.choix div ul li {
+      width: 100%;
+      margin: 1rem 0;
+  }
 }
