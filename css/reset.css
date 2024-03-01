@@ -1,16 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+body {
+    color: #fff;
+    margin: 0;
+    letter-spacing: .1rem;
+    font-size: 2rem;
+}
+@font-face {
+    font-family: 'Bloody';
+    src: url('../font/bloody.ttf') format('truetype');
+}
+
+/* Utilisation de la police dans vos sélecteurs CSS */
+body {
+    font-family: 'Bloody', sans-serif;
+}
+
 html{
     font-size: 62.5%;
     margin: 0;
     padding: 0;
-}
-body{
-    
-    font: 1.6rem sans-serif;
-    margin: 0;
-    letter-spacing: .1rem;
-    line-height: 1.6;
-    color: #fff;
 }
 p{
     font-weight: 500;
