@@ -8,9 +8,14 @@ header {
 }
 
 header ul li a.focus {
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  color: #e69090;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);  
 }
+header ul li a.focus {
+  background: linear-gradient(to bottom, #fff 75%, #f00 25%); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 header ul{
     display: flex;
